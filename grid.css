@@ -1,9 +1,38 @@
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+}
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
 }
 
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
 
+.grid{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 200px;
+    place-items: center;
+    min-height: 10vh;
+}
+
+.grid li{
+    border-bottom: 2px solid var(--dark-cyan);
+    font-size: 20px;
+}
+.grid a:hover{
+    color: var(--bright-orange);
+}
 .container-grid{
     margin: 200px auto;
     display: grid;
