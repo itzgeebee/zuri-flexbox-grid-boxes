@@ -27,6 +27,9 @@ body{
     background: var(--very-light-gray);
     overflow-x: hidden;
     font-size: 15px;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
 }
 
 .buttons{
@@ -55,7 +58,6 @@ h3{
 .flex-container{
     display: flex;
     flex-wrap: nowrap;
-    margin: 200px auto;
     padding: 0;
     width: 700px;
     
@@ -104,4 +106,24 @@ h3{
 #luxury .buttons:hover{
     background-color: var(--very-dark-cyan);
     color: var(--very-light-gray);
+}
+
+@media screen and (max-width: 720px) {
+    .flex-container{
+        flex-direction: column;
+        max-width: 100%;
+        margin: 20px;
+    }
+    #sedans{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    #luxury{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0;
+
+    }
 }
