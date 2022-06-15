@@ -1,0 +1,107 @@
+/* variables */
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white-p: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    --font1: 'Lexend Deca', sans-serif;
+    --font2: 'Big Shoulders Display', cursive;
+}
+/* reset */
+body, p, a, ul, li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: var(--font1);
+}
+h3{
+    font-family: var(--font2);
+}
+
+li{
+    list-style-type: none;
+}
+/* base styles */
+body{
+    background: var(--very-light-gray);
+    overflow-x: hidden;
+    font-size: 15px;
+}
+
+.buttons{
+    background: var(--very-light-gray);
+    color: var(--primary);
+    padding: 8px 12px;
+    display: inline-block;
+    border-radius: 20px;
+    border: none;
+    margin-top: 30px;
+}
+
+.buttons:hover{
+    border: 1px solid var(--very-light-gray);
+    cursor: pointer;
+    
+}
+
+p, h3{
+    color: var(--very-light-gray);
+}
+h3{
+    font-size: 1.5em;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 200px auto;
+    padding: 0;
+    width: 700px;
+    
+}
+
+.flex-container div{
+    padding: 30px 30px;
+    
+    
+}
+.flex-container p{
+    margin-bottom: 30px;
+}
+
+#sedans{
+    background-color: var(--bright-orange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#sedans .buttons{
+    color: var(--bright-orange);
+}
+#sedans .buttons:hover{
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray);
+}
+#suv{
+    background-color: var(--dark-cyan);
+}
+#suv .buttons{
+    color: var(--dark-cyan);
+}
+
+#suv .buttons:hover{
+    background-color: var(--dark-cyan);
+    color: var(--very-light-gray);
+}
+#luxury{
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#luxury .buttons{
+    color: var(--very-dark-cyan);
+}
+#luxury .buttons:hover{
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-gray);
+}
